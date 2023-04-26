@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>JS</title>
+  </head>
+  <body class="m-9">
+    <div class="mx-6">
+      <!-- Introduccion a JS -->
+      <section>
+        <h1 class="text-4xl">Introduccion a JS</h1>
+        <span class="text-gray-500"
+          >Que es?, Historia, Versiones, Como empezar.</span
+        >
+        <article class="mx-4 my-7 w-4/5">
+          <h2 class="text-3xl">Que es Javascript.</h2>
+          <p class="text-lg">
+            Javascript es una tecnologia la cual puedes dar vida a tu pagina web
+            la cual ya esta construida con HTML, CSS cuales son estructura y
+            diseño, y Javascript seria la vida.
+          </p>
+        </article>
+        <article class="mx-4 my-7 w-4/5">
+          <h2 class="text-3xl">Historia de Javascript</h2>
+          <p class="text-lg">
+            Javascript en su inicio fue Creado en 1995 por Brendan Eich el
+            creador de la plataforma NetScape.
+          </p>
+        </article>
+        <article class="mx-4 my-7 w-4/5">
+          <h2 class="text-3xl">Versiones de Javascript</h2>
+          <p class="text-lg">
+            Las versiones de Javascript son las siguientes desde 1997 se
+            estandariso ECMAScript es el nombre oficial. ECMAScript incluye ES1,
+            ES2, ES3, ES5, and ES6 ya que son retrtocompatibles con versiones
+            anteriores haciendo el lenguaje con muchos problemas a futuro.
+          </p>
+        </article>
+        <article class="mx-4 my-7 w-4/5">
+          <h2 class="text-3xl">Como hacer correr JS</h2>
+          <p class="text-lg">
+            Js en su buena practica es hacer siempre un archivo JS aparte del
+            HTML debido a que se mantiene un mejor orden.
+          </p>
+        </article>
+      </section>
+      <section>
+        <h1 class="text-4xl">Acerca de Variables</h1>
+        <span class="text-gray-500"
+          >Que son variables, Hoisting, Nombres, Scope</span
+        >
+        <article class="my-7 w-4/5">
+          <div class="mx-6">
+            <h2 class="text-3xl">Tipo de variables</h2>
+            <p class="text-lg">
+              Las variables existentes son:
+              <span class="font-semibold text-purple-800">let</span>,
+              <span class="font-semibold text-purple-800">var</span> y
+              <span class="font-semibold text-purple-800">const</span>
+            </p>
+            <div class="my-4">
+              <h3 class="text-2xl">Su declaracion</h3>
+              <span class="text-gray-500">Para definir tipos de datos</span>
+              <div class="font-mono text-xl">
+                <p class="text-purple-800">
+                  let + <span class="text-purple-500">nombre variable</span> =
+                  <span class="text-purple-500">valor</span>
+                </p>
+                <p class="text-purple-800">
+                  const + <span class="text-purple-500">nombre variable</span> =
+                  <span class="text-purple-500">valor</span>
+                </p>
+                <p class="text-purple-800">
+                  var + <span class="text-purple-500">nombre variable</span> =
+                  <span class="text-purple-500">valor</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="my-7 w-4/5">
+          <div class="my-4">
+            <h3 class="text-3xl">Hoisting</h3>
+            <p class="text-lg">
+              Paracticamente es que la variable o funcion cual queremos que
+              arroje algun dato en concreto si su valor o inicializacion esta
+              por delante a su iteracion esta sera
+              <span class="font-semibold">undefined</span>
+            </p>
+            <img class="w-2/3 my-3" src="https://www.escuelafrontend.com/_next/image?url=http%3A%2F%2Fres.cloudinary.com%2Fescuela-frontend%2Fimage%2Fupload%2Fv1627067683%2Farticles%2Fentiende-el-hoisting-en-javascript-con-ejemplos-pr%25C3%25A1cticos%2520%2Fafse-de-creacion_qavq3m.jpg&w=828&q=100"
+              alt="hoisting-ejemplo-1"/>
+            <img class="w-2/3 my-3" src="https://www.escuelafrontend.com/_next/image?url=http%3A%2F%2Fres.cloudinary.com%2Fescuela-frontend%2Fimage%2Fupload%2Fv1627067680%2Farticles%2Fentiende-el-hoisting-en-javascript-con-ejemplos-pr%25C3%25A1cticos%2520%2Ffase-de-ejecucion_lthkap.jpg&w=1080&q=100" alt="hoisting-ejemplo-2"/>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <!-- <div class="mx-6">
+        <button class="bg-red-600 hover:bg-red-700 p-4 rounded-lg w-56 text-white shadow-lg" onclick="mensaje()">Alerta</button>
+    </div>
+    <div class="mx-6">
+        <button class="bg-red-600 hover:bg-red-700 p-4 rounded-lg w-56 text-white shadow-lg" onclick="suma(10,10)">Suma de variables</button>
+        <p class="mx-1 my-2 text-white">El calculo de 10 + 10 es:  <span class="font-medium" id="log"></span></p>
+    </div> -->
+
+    <noscript> El ordenador no tiene habilitado el JS </noscript>
+    <script src="clase_1/script.js"></script>
+  </body>
+</html>
