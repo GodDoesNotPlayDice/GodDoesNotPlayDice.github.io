@@ -19,7 +19,7 @@
           <img class="w-14 mx-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" alt="JS">
         </div>
         <span class="text-gray-500 block text-center">Que es?, Historia, Versiones, Como empezar.</span>
-        <article class="mx-4 my-7">
+        <article class="my-7">
           <h2 class="text-3xl">Que es Javascript.</h2>
           <p class="text-lg">
             Javascript es una tecnologia la cual puedes dar vida a tu pagina web
@@ -27,14 +27,14 @@
             diseño, y Javascript seria la vida.
           </p>
         </article>
-        <article class="mx-4 my-7">
+        <article class="my-7">
           <h2 class="text-3xl">Historia de Javascript</h2>
           <p class="text-lg">
             Javascript en su inicio fue Creado en 1995 por Brendan Eich el
             creador de la plataforma NetScape.
           </p>
         </article>
-        <article class="mx-4 my-7">
+        <article class="my-7">
           <h2 class="text-3xl">Versiones de Javascript</h2>
           <p class="text-lg">
             Las versiones de Javascript son las siguientes desde 1997 se
@@ -43,7 +43,7 @@
             anteriores haciendo el lenguaje con muchos problemas a futuro.
           </p>
         </article>
-        <article class="mx-4 my-7">
+        <article class="my-7">
           <h2 class="text-3xl">Como hacer correr JS</h2>
           <p class="text-lg">
             Js en su buena practica es hacer siempre un archivo JS aparte del
@@ -56,7 +56,7 @@
         <span class="text-gray-500 block text-center"
           >Que son variables, Hoisting, Nombres, Scope</span
         >
-        <article class="mx-4 my-7">
+        <article class="my-7">
             <h2 class="text-3xl">Tipo de variables</h2>
             <p class="text-lg">
               Las variables existentes son:
@@ -86,7 +86,7 @@
               </div>
             </div>
         </article>
-        <article class="my-7">
+        <article class="my-7" id="hoisting">
             <h3 class="text-3xl">Hoisting</h3>
             <p class="text-lg">
               Paracticamente es que la variable o funcion cual queremos que
@@ -122,6 +122,37 @@
           <h1 class="text-4xl text-center">Tipos de datos</h1>
           <span class="text-gray-500 block text-center"
             >Los tipos de datos existentes, Objetos, Type Of, Objetos incorporados (Built-in)</span>
+            <article class="my-7">
+              <h3 class="text-3xl">Tipos de datos en variables</h3>
+              <div class="my-5">
+                <p class="text-lg">Los tipos de datos en variables se puden categorizar en <span class="text-purple-600 font-medium">string, undefined, number, bigint, boolean, null</span></p>
+              <p class="text-lg">Estos tipos de datos son llamados "tipos primitivos" debido a que son datos y no objeto con metodos como tal.</p>
+              <p class="text-lg">Estos tipos de datos ademas pueden almacenarse en cualquiera de las 3 variables ya nombradas <span class="text-gray-600 font-semibold">let, var, const</span></p>
+              </div>
+              <p class="text-lg"><span class="text-purple-600 font-bold">String: </span>el string es una cadena de caracteres la cual en los lenguajes de programacion son para representar texto.</p>
+              <p class="text-lg"><span class="text-purple-600 font-bold">Undefined: </span>es el tipo de dato el cual te rebotara cuando no es incializada la variable antes de su ejecucion esto puede pasar por <a href="#hoisting" class="text-blue-600">Hoisting</a>.</p>
+              <p class="text-lg"><span class="text-purple-600 font-bold">Number y BigInt: </span>el tipo de dato number/BigInt es cuando queremos que no sean en este caso cadena de texto sino que se trabaje como number o mejor conocido como integer (entero) o float (decimal).</p>
+              <p class="text-lg"><span class="text-purple-600 font-bold">Boolean: </span>el tipo boolean nos mas que nada un si / no en javascritp es conocido como <span class="text-purple-600 font-semibold">true o false</span></p>
+              <p class="text-lg"><span class="text-purple-600 font-bold">Null: </span>el null no es un tipo de dato como tal sino es mas bien nada es un dato arrojado por el lenguaje cuando en la variable se encunetra inicializada pero no continene ningun dato almacenado.</p>
+              <h4 class="text-2xl">Ejemplo</h4>
+              <div class="font-mono text-xl py-4">
+                <p class="text-purple-800">
+                  let + <span class="text-purple-500">cadena</span> =
+                  <span class="text-purple-500">"Hello world"</span>;
+                </p>
+                <span class="text-gray-500 font-sans text-base mx-2">cadena de texto</span>
+                <p class="text-purple-800">
+                  const + <span class="text-purple-500">number</span> =
+                  <span class="text-purple-500">100</span>;
+                </p>
+                <span class="text-gray-500 font-sans text-base mx-2">en esta variable puedes aplicar float como integers</span>
+                <p class="text-purple-800">
+                  var + <span class="text-purple-500">booleano</span> =
+                  <span class="text-purple-500">true</span>;
+                </p>
+                <span class="text-gray-500 font-sans text-base mx-2">booleano true o false</span>
+              </div>
+            </article>
         </section>
     </div>
   </div>
