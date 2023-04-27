@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>JS</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" type="image/x-icon">
+    <title>Aprendizaje de JS</title>
   </head>
-  <body class="m-9">
-    <div class="mx-6">
+  <body class="my-9">
+    <noscript> El ordenador no tiene habilitado el JS </noscript>
+    <div class="flex justify-center">
+    <div class="lg:max-w-6xl">
       <!-- Introduccion a JS -->
       <section>
-        <h1 class="text-4xl">Introduccion a JS</h1>
-        <span class="text-gray-500"
-          >Que es?, Historia, Versiones, Como empezar.</span
-        >
-        <article class="mx-4 my-7 w-4/5">
+        <div class="flex justify-center items-center">
+          <h1 class="text-4xl text-center">Introduccion a </h1>
+          <img class="w-14 mx-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" alt="JS">
+        </div>
+        <span class="text-gray-500 block text-center">Que es?, Historia, Versiones, Como empezar.</span>
+        <article class="mx-4 my-7">
           <h2 class="text-3xl">Que es Javascript.</h2>
           <p class="text-lg">
             Javascript es una tecnologia la cual puedes dar vida a tu pagina web
@@ -23,14 +27,14 @@
             diseño, y Javascript seria la vida.
           </p>
         </article>
-        <article class="mx-4 my-7 w-4/5">
+        <article class="mx-4 my-7">
           <h2 class="text-3xl">Historia de Javascript</h2>
           <p class="text-lg">
             Javascript en su inicio fue Creado en 1995 por Brendan Eich el
             creador de la plataforma NetScape.
           </p>
         </article>
-        <article class="mx-4 my-7 w-4/5">
+        <article class="mx-4 my-7">
           <h2 class="text-3xl">Versiones de Javascript</h2>
           <p class="text-lg">
             Las versiones de Javascript son las siguientes desde 1997 se
@@ -39,7 +43,7 @@
             anteriores haciendo el lenguaje con muchos problemas a futuro.
           </p>
         </article>
-        <article class="mx-4 my-7 w-4/5">
+        <article class="mx-4 my-7">
           <h2 class="text-3xl">Como hacer correr JS</h2>
           <p class="text-lg">
             Js en su buena practica es hacer siempre un archivo JS aparte del
@@ -48,12 +52,11 @@
         </article>
       </section>
       <section>
-        <h1 class="text-4xl">Acerca de Variables</h1>
-        <span class="text-gray-500"
+        <h1 class="text-4xl text-center">Acerca de Variables</h1>
+        <span class="text-gray-500 block text-center"
           >Que son variables, Hoisting, Nombres, Scope</span
         >
-        <article class="my-7 w-4/5">
-          <div class="mx-6">
+        <article class="mx-4 my-7">
             <h2 class="text-3xl">Tipo de variables</h2>
             <p class="text-lg">
               Las variables existentes son:
@@ -67,37 +70,56 @@
               <div class="font-mono text-xl">
                 <p class="text-purple-800">
                   let + <span class="text-purple-500">nombre variable</span> =
-                  <span class="text-purple-500">valor</span>
+                  <span class="text-purple-500">valor</span>;
                 </p>
+                <span class="text-gray-500 font-sans text-base mx-2">let es una variable la cual es utilizada como variable local con un scope local</span>
                 <p class="text-purple-800">
                   const + <span class="text-purple-500">nombre variable</span> =
-                  <span class="text-purple-500">valor</span>
+                  <span class="text-purple-500">valor</span>;
                 </p>
+                <span class="text-gray-500 font-sans text-base mx-2">const es una constante con un scope local y su valor es invariable</span>
                 <p class="text-purple-800">
                   var + <span class="text-purple-500">nombre variable</span> =
-                  <span class="text-purple-500">valor</span>
+                  <span class="text-purple-500">valor</span>;
                 </p>
+                <span class="text-gray-500 font-sans text-base mx-2">var es una variable con un scope global y la cual se inicializa con un valor inicializacion</span>
               </div>
             </div>
-          </div>
         </article>
-        <article class="my-7 w-4/5">
-          <div class="my-4">
+        <article class="my-7">
             <h3 class="text-3xl">Hoisting</h3>
             <p class="text-lg">
               Paracticamente es que la variable o funcion cual queremos que
               arroje algun dato en concreto si su valor o inicializacion esta
               por delante a su iteracion esta sera
-              <span class="font-semibold">undefined</span>
+              <span class="font-semibold">undefined</span>.
             </p>
-            <img class="w-2/3 my-3" src="https://www.escuelafrontend.com/_next/image?url=http%3A%2F%2Fres.cloudinary.com%2Fescuela-frontend%2Fimage%2Fupload%2Fv1627067683%2Farticles%2Fentiende-el-hoisting-en-javascript-con-ejemplos-pr%25C3%25A1cticos%2520%2Fafse-de-creacion_qavq3m.jpg&w=828&q=100"
-              alt="hoisting-ejemplo-1"/>
-            <img class="w-2/3 my-3" src="https://www.escuelafrontend.com/_next/image?url=http%3A%2F%2Fres.cloudinary.com%2Fescuela-frontend%2Fimage%2Fupload%2Fv1627067680%2Farticles%2Fentiende-el-hoisting-en-javascript-con-ejemplos-pr%25C3%25A1cticos%2520%2Ffase-de-ejecucion_lthkap.jpg&w=1080&q=100" alt="hoisting-ejemplo-2"/>
-          </div>
+            <div class="flex flex-col items-center">
+              <img class="max-w-2/3 my-3" src="https://www.escuelafrontend.com/_next/image?url=http%3A%2F%2Fres.cloudinary.com%2Fescuela-frontend%2Fimage%2Fupload%2Fv1627067683%2Farticles%2Fentiende-el-hoisting-en-javascript-con-ejemplos-pr%25C3%25A1cticos%2520%2Fafse-de-creacion_qavq3m.jpg&w=828&q=100" alt="hoisting-ejemplo-1"/>
+              <img class="max-w-2/3 my-3" src="https://www.escuelafrontend.com/_next/image?url=http%3A%2F%2Fres.cloudinary.com%2Fescuela-frontend%2Fimage%2Fupload%2Fv1627067680%2Farticles%2Fentiende-el-hoisting-en-javascript-con-ejemplos-pr%25C3%25A1cticos%2520%2Ffase-de-ejecucion_lthkap.jpg&w=1080&q=100" alt="hoisting-ejemplo-2"/>
+            </div>
+            </article>
+            <article class="my-7">
+          <h3 class="text-3xl">Nombre para Variables</h3>
+          <p class="text-lg">EL definir las variables usualmente se aplican en minusculas y las constantes en mayusculas, alemenos en Python es asi pero en javascript existe la palabra <span class="font-medium text-purple-800">const</span> por lo que pude usarse el uso de minusculas en las constantes, una muy buena manera de definir variables es con dos tipos: <span class="text-purple-600 font-medium">CamelCase</span> y <span class="text-purple-600 font-medium">guiones_bajos</span>, ademas es importante que las variables en cualquier lenguaje de programacion sean claras y precisas ya que es mejor menos comentarios y mas variables claras.
+          </p>
         </article>
-      </section>
+        <article class="my-7">
+          <h3 class="text-3xl">Variable Scopes</h3>
+          <p class="text-lg">Hacen referencia a la visibilidad de la varaible o como puede ser su uso despues de declararla
+            existen tres tipos de Scope <br> <span class="text-purple-800 font-medium">Block</span>, 
+            <span class="text-purple-800 font-medium">Function</span>, 
+            <span class="text-purple-800 font-medium">Global</span>
+          </p>
+          <div class="my-8">
+            <p class="text-lg my-3"><span class="text-purple-600 font-medium underline">Block:</span> Block es relacionado unicamente a que es scope se mantendra unicamente en el contexto que este, ejemplo: si esta dentro de un IF solo es contexto de ese IF</p>
+            <p class="text-lg my-3"><span class="text-purple-600 font-medium underline">Function:</span> Function es relacionado unicamente a que es scope se mantendra unicamente en el contexto de una funcion y unicamente existe ahi, ejemplo: si esta dentro de un function solo es contexto de ese function</p>
+            <p class="text-lg my-3"><span class="text-purple-600 font-medium underline">Global:</span> Global es un scope se puede usar en todo tipo de contexto ya sea en dentro o fuera de bloques aunque usar <span class="text-purple-600 font-medium">var</span> hoy en dia es mala practica hacerlas dentro de un bloque y usarlas fuera.</p>
+          </div>
+          </article>
+        </section>
     </div>
-
+  </div>
     <!-- <div class="mx-6">
         <button class="bg-red-600 hover:bg-red-700 p-4 rounded-lg w-56 text-white shadow-lg" onclick="mensaje()">Alerta</button>
     </div>
@@ -105,8 +127,9 @@
         <button class="bg-red-600 hover:bg-red-700 p-4 rounded-lg w-56 text-white shadow-lg" onclick="suma(10,10)">Suma de variables</button>
         <p class="mx-1 my-2 text-white">El calculo de 10 + 10 es:  <span class="font-medium" id="log"></span></p>
     </div> -->
-
-    <noscript> El ordenador no tiene habilitado el JS </noscript>
+    <footer class="flex flex-col items-end m-10">
+      <p class="text-lg text-gray-600">Guia basada en: <a target="_blank" class="text-blue-600" href="https://roadmap.sh/javascript">RoadMap.js</a></p>
+    </footer>
     <script src="clase_1/script.js"></script>
   </body>
 </html>
