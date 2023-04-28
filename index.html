@@ -98,6 +98,9 @@
               <img class="max-w-2/3 my-3" src="https://www.escuelafrontend.com/_next/image?url=http%3A%2F%2Fres.cloudinary.com%2Fescuela-frontend%2Fimage%2Fupload%2Fv1627067683%2Farticles%2Fentiende-el-hoisting-en-javascript-con-ejemplos-pr%25C3%25A1cticos%2520%2Fafse-de-creacion_qavq3m.jpg&w=828&q=100" alt="hoisting-ejemplo-1"/>
               <img class="max-w-2/3 my-3" src="https://www.escuelafrontend.com/_next/image?url=http%3A%2F%2Fres.cloudinary.com%2Fescuela-frontend%2Fimage%2Fupload%2Fv1627067680%2Farticles%2Fentiende-el-hoisting-en-javascript-con-ejemplos-pr%25C3%25A1cticos%2520%2Ffase-de-ejecucion_lthkap.jpg&w=1080&q=100" alt="hoisting-ejemplo-2"/>
             </div>
+            <div class="flex justify-end">
+              <a target="_blank" class="text-blue-600" href="https://www.escuelafrontend.com/">Imagen Source</a>
+            </div>
             </article>
             <article class="my-7">
           <h3 class="text-3xl">Nombre para Variables</h3>
@@ -153,6 +156,81 @@
                 <span class="text-gray-500 font-sans text-base mx-2">booleano true o false</span>
               </div>
             </article>
+            <article class="my-7">
+              <h3 class="text-3xl">Tipos de datos no primitivos</h3>
+              <div class="my-5">
+                <p class="text-lg">Los objetos en javascript son data estructurada la cual se usa en el cotexto de clave y valor tal asi que podemos representar objetos de la vida real.</p>
+                <p class="text-lg">Entonces para comenzar los objetos no es mas que la representacion de una estructura de datos en clave y valor para objetos existentes o no existentes en la vida real.</p>
+                <p class="text-lg font-semibold">hagamos un ejemplo</p>
+                <div class="my-4">
+                  <div class="flex">
+                    <h3 class="text-2xl">Su declaracion, Inicializacion y Ejecucion</h3>
+                  </div>
+                  <div class="flex items-center max-lg:block">
+                    <div class="font-mono text-xl my-6 w-2/4">
+                      <p class="text-purple-800">
+                        let <span class="text-purple-500">usuario</span> =
+                        <span class="text-purple-500">new Object()</span>;
+                      </p>
+                      <span class="text-gray-600">Syntax de un costructor</span>
+                      <p class="text-purple-800">
+                        let <span class="text-purple-500">usuario</span> =
+                        <span class="text-purple-500">{}</span>;
+                      </p>
+                      <span class="text-gray-600">Syntax de un objeto literal</span>
+                  </div>
+                  <div class="font-mono text-xl my-6 w-2/4">
+                    <p class="text-purple-800">
+                      let <span class="text-purple-500">usuario</span> =
+                      <span class="text-purple-500">{ <br> &nbsp; nombre : Vicente, <br> &nbsp; edad : 21 <br> }</span>;
+                    </p>
+                    <span class="text-gray-600">Luego se declaran los valores los cuales queremos almacenar</span>
+                </div>
+                <div class="font-mono text-xl my-6 w-2/4">
+                  <p class="text-purple-800">console.log(<span class="text-purple-500">usuario.nombre</span>)</span>;
+                  <p class="text-purple-800">console.log(<span class="text-purple-500">usuario.edad</span>)</span>;
+                  </p>
+                  <span class="text-gray-600">Luego se declaran los valores los cuales queremos almacenar</span>
+                  </div>
+                </div>
+              </div>
+              <div class="my-4">
+                <h3 class="text-2xl">Tiene dos manera de trabajar son GET y SET</h3>
+                <p class="text-lg">Esto se puede denominar como Diccionario por su clave valor, al igual que una lista o array tienen un posicion solo que esta puede obtener una id personalizada la cual puede ser un string o numero, y tienen metodos.</p>
+                <p class="text-lg"><span class="font-semibold">Get y Set</span> son una forma de modificar o extraer un valor del objeto mencionado.</p>
+                <div class="font-mono text-xl my-6 w-2/4">
+                  <p class="text-purple-800">
+                    console.log(<span class="text-purple-500">usuario['nombre']</span>) <span class="text-gray-600">//GET</span>
+                  </p>
+                  <p class="text-purple-800">
+                    usuario[<span class="text-purple-500">'nombre'</span>] = Andres; <span class="text-gray-600">//SET</span>
+                  </p>
+                  <p class="text-purple-800">
+                    delete <span class="text-purple-500">usuario['nombre']</span> <span class="text-gray-600">//DELETE</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            </article>
+            <article class="my-7">
+              <h3 class="text-3xl">Que es el built-in?</h3>
+              <p class="text-lg my-4">Al igual como se menciono anteriormente como es un objeto en javascript, built-in es directamente funciones o objetos ya creados en javascript tal como <span class="font-medium"><span class="text-purple-600">console.<span class="text-purple-500">log()</span></span></span>, <span class="font-medium"><span class="text-purple-600">alert()</span></span>
+                <span class="font-medium"><span class="text-purple-600">Number, Date, String, Error, Function, Boolean</span></span>, entre otros.</p>
+                <p class="text-lg my-4">Bajo este mismo concepto se puede decir que Javascript esta construido por un JSON usando clave y valor en valor pueden haber mas claves y valor con sus respectivos metodos. Por lo que todos las funciones <span class="text-purple-600">Built In</span> en javascript son hijas del padre llamado Window.</p>
+                <p class="text-lg">Como dato imporante ya de haber visto las variables, <span class="text-purple-600 font-medium">var</span> es un asignador de una variable la cual su <span class="text-purple-600 font-medium">nombre = key y su contenido = value</span>, y pasa a ser hija del objeto padre que es <span class="text-purple-600 font-medium">Window.</span><br><a href="https://www.youtube.com/watch?v=PuziZJezF7w&ab_channel=DamianSireDesarrollo" target="_blank" class="text-blue-600">explicacion mas dellatada del objeto Window.</a></p>
+            </article>
+            <article class="my-7">
+              <h3 class="text-3xl">Que es el TypeOF</h3>
+              <p class="text-lg my-4">El <span class="text-purple-600 font-medium">type of</span> es una funcion <span class="text-purple-600">built-in</span> el cual sirve para comprar tipos de datos o ver que tipo de dato es una variable.</p>
+              <p class="text-purple-800 text-xl font-medium font-mono">
+                console.log(<span class="text-purple-500">typeof 10</span>) <span class="text-gray-600">// Number</span>
+              </p>
+            </article>
+        </section>
+        <section>
+          <h1 class="text-4xl text-center">Conversion de tipos</h1>
+          <span class="text-gray-500 block text-center"
+            >Tipos de conversion vs Coercion, Conversion Explicito e Implicito</span>
         </section>
     </div>
   </div>
@@ -166,6 +244,6 @@
     <footer class="flex flex-col items-end m-10">
       <p class="text-lg text-gray-600">Guia basada en: <a target="_blank" class="text-blue-600" href="https://roadmap.sh/javascript">RoadMap.js</a></p>
     </footer>
-    <script src="clase_1/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
