@@ -11,7 +11,7 @@
   <body class="my-9">
     <noscript> El ordenador no tiene habilitado el JS </noscript>
     <div class="flex justify-center">
-    <div class="lg:max-w-6xl">
+    <div class="lg:max-w-6xl max-lg:px-5">
       <!-- Introduccion a JS -->
       <section>
         <div class="flex justify-center items-center">
@@ -166,8 +166,8 @@
                   <div class="flex">
                     <h3 class="text-2xl">Su declaracion, Inicializacion y Ejecucion</h3>
                   </div>
-                  <div class="flex items-center max-lg:block">
-                    <div class="font-mono text-xl my-6 w-2/4">
+                  <div class="flex items-center max-md:block">
+                    <div class="font-mono text-xl my-6 w-2/4 max-md:w-full">
                       <p class="text-purple-800">
                         let <span class="text-purple-500">usuario</span> =
                         <span class="text-purple-500">new Object()</span>;
@@ -179,26 +179,26 @@
                       </p>
                       <span class="text-gray-600">Syntax de un objeto literal</span>
                   </div>
-                  <div class="font-mono text-xl my-6 w-2/4">
+                  <div class="font-mono text-xl my-6 w-2/4 max-md:w-full">
                     <p class="text-purple-800">
                       let <span class="text-purple-500">usuario</span> =
                       <span class="text-purple-500">{ <br> &nbsp; nombre : Vicente, <br> &nbsp; edad : 21 <br> }</span>;
                     </p>
                     <span class="text-gray-600">Luego se declaran los valores los cuales queremos almacenar</span>
                 </div>
-                <div class="font-mono text-xl my-6 w-2/4">
-                  <p class="text-purple-800">console.log(<span class="text-purple-500">usuario.nombre</span>)</span>;
-                  <p class="text-purple-800">console.log(<span class="text-purple-500">usuario.edad</span>)</span>;
+                <div class="font-mono text-xl my-6 w-2/4 max-md:w-full max-md:my-4">
+                  <p class="text-purple-800 max-md:my-2">console.log(<span class="text-purple-500">usuario.nombre</span>)</span>;
+                  <p class="text-purple-800 max-md:my-">console.log(<span class="text-purple-500">usuario.edad</span>)</span>;
                   </p>
-                  <span class="text-gray-600">Luego se declaran los valores los cuales queremos almacenar</span>
+                  <span class="text-gray-600 max-md:my-">Luego se declaran los valores los cuales queremos almacenar</span>
                   </div>
                 </div>
               </div>
               <div class="my-4">
-                <h3 class="text-2xl">Tiene dos manera de trabajar son GET y SET</h3>
+                <h3 class="text-2xl max-md:my-2">Tiene dos manera de trabajar son GET y SET</h3>
                 <p class="text-lg">Esto se puede denominar como Diccionario por su clave valor, al igual que una lista o array tienen un posicion solo que esta puede obtener una id personalizada la cual puede ser un string o numero, y tienen metodos.</p>
                 <p class="text-lg"><span class="font-semibold">Get y Set</span> son una forma de modificar o extraer un valor del objeto mencionado.</p>
-                <div class="font-mono text-xl my-6 w-2/4">
+                <div class="font-mono text-xl my-6 w-2/4 max-md:w-full">
                   <p class="text-purple-800">
                     console.log(<span class="text-purple-500">usuario['nombre']</span>) <span class="text-gray-600">//GET</span>
                   </p>
@@ -290,7 +290,7 @@
         <button class="bg-red-600 hover:bg-red-700 p-4 rounded-lg w-56 text-white shadow-lg" onclick="suma(10,10)">Suma de variables</button>
         <p class="mx-1 my-2 text-white">El calculo de 10 + 10 es:  <span class="font-medium" id="log"></span></p>
     </div> -->
-    <footer class="flex flex-col items-end m-10">
+    <footer class="flex flex-col items-end m-10 max-md:m-0 max-md:block max-md:text-center max-md:my-5">
       <p class="text-lg text-gray-600">Guia basada en: <a target="_blank" class="text-blue-600" href="https://roadmap.sh/javascript">RoadMap.js</a></p>
     </footer>
     <script src="script.js"></script>
